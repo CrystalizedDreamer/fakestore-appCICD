@@ -1,10 +1,10 @@
-/* global afterEach, afterAll, jest */
+/* global afterEach,  jest */
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent, within, cleanup } from '@testing-library/react';
 import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import { app } from './Firebase';
+
 import React from 'react';
 
 /* global test, expect, describe */
