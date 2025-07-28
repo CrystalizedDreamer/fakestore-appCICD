@@ -42,6 +42,8 @@ I am quite pleased with this.
 
 The order and product creation logics were also connected with firestore so the app can be created and manipulated on the fly.
 
+************************************************************
+
 1.99 update: The Vercel / CI/CD update
 
 Utilizing jest, I have created test scenarios for the rendering of the app itself,
