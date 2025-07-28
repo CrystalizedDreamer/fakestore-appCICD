@@ -3,8 +3,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import React from 'react';     
-import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart, incrementQuantity, decrementQuantity } from './store';
+import { useSelector } from 'react-redux';
 import Cart from './components/Cart.jsx';
 import Products from './components/products.jsx'; 
 import AddProducts  from './components/addProducts.jsx';
@@ -25,9 +24,6 @@ function App() {
   const [showCart, setShowCart] = React.useState(false);
   // Use Redux for cart state and actions
   const cart = useSelector(state => state.cart);
-  const dispatch = useDispatch();
-  // Calculate total price
-  const total = cart.reduce((sum, item) => sum + Number(item.price) * (item.quantity || 1), 0);
   // Calculate total quantity of items in cart
   const totalQuantity = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
 

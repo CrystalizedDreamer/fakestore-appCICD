@@ -65,7 +65,7 @@ export default function Cart() {
       {/* List all items in the cart */}
       <ul className="list-group mb-3">
         {cart.map((item, idx) => (
-          <li key={item.id + '-' + idx} className="list-group-item d-flex justify-content-between align-items-center">
+          <li key={item.id + '-' + idx} className="list-group-item d-flex justify-content-between align-items-center" data-testid="cart-item">
             <div className="d-flex align-items-center">
               <img src={item.image} alt={item.title} style={{ width: 50, height: 50, objectFit: 'contain', marginRight: 10 }} />
               <div>
