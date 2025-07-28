@@ -53,4 +53,4 @@ is updated as products are added in properly.
 As outlined in the project guidelines, this app will not commit if the tests fail
 the link in question being:
 
-fakestore-app-cicd.vercel.app
+https://fakestore-app-cicd-git-main-willwares-projects.vercel.app
