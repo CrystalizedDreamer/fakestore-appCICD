@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import Cart from './components/Cart.jsx';
 import Products from './components/products.jsx'; 
 import AddProducts  from './components/addProducts.jsx';
-import Home from './components/home.jsx';
+import Home from './components/Home.jsx';
 
 
 import Login from './components/Login.jsx';
